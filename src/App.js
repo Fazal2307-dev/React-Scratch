@@ -1,16 +1,18 @@
 import React from 'react'
+import Header from './components/Header'
+import TodoItem from './components/TodoItme'
+import Button from './components/Button'
+
+import './style.css'
 
 const App = () => {
-  const ImageLink = "https://ytplaylist-len.sharats.dev/"
-  
-
   return (
-    <div>
-      <h3>hey fazal you did great job</h3>
-
-     <a href={ImageLink}> click me</a>
+    <div className='todo-container'>
+        <Header />
+        <TodoItem />
+        <Button />
     </div>
   )
 }
 
-export default App
+export default App;
